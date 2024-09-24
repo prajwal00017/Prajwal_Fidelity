@@ -7,4 +7,4 @@ public class Main {
         dog.walk();
         dog.bark();
     }
-}
+} 
