@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Form</title>
+</head>
+<body style="text-align: left;">
+    <h1>A Simple Form</h1>
+    <h2>Form Fundamentals</h2>
+
+    <form onsubmit="alert('You have successfully submitted the Book Form'); return false;">
+        <fieldset>
+            <legend>Customer Info</legend>
+            
+            <p>
+            <label for="cusname">Name:</label>
+            <input type="text" id="cusname" name="cusname" placeholder="Enter your name" autofocus required>
+            </p>
+            <p>
+            <label for="telephone">Telephone:</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Pattern: 234-567-8910" pattern="\d{3}-\d{3}-\d{4}" required>
+            </p>
+            <p>
+            <label for="mail">Email address:</label>
+            <input type="email" id="mail" name="mail" placeholder="Enter your email address" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Books</legend>
+
+            <label for="book">Book:</label>
+            <input list="books" id="book" name="book" required>
+            <datalist id="books">
+                <option value="HTML5 - Bruce Lawson and Remy Sharp">
+                <option value="HTML5 - Up and Running - Mark Pilgrim">
+                <option value="Head First HTML5 Programming - Eric Freeman">
+                <option value="Mastering HTML, CSS and JavaScript - Laura Lemay">
+            </datalist>
+
+            <label for="quantity">Quantity (Max 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" required>
+        </fieldset>
+
+        <input type="submit" name="submit">
+    </form>
+</body>
+</html>

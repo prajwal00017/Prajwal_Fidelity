@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajwal Singh's Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 3fr 1fr; /* Main content and sidebar */
+            grid-template-rows: auto 1fr auto; /* Header, content, footer */
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        main {
+            grid-column: 1; /* Main content area */
+        }
+
+        aside {
+            grid-column: 2; /* Sidebar area */
+            background-color: #e2e2e2;
+            padding: 20px;
+        }
+
+        footer {
+            grid-column: 1 / span 2; /* Footer spans both columns */
+            text-align: center;
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+        }
+
+        article {
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            animation: fadeInUp 0.5s ease-in-out; /* Animation for articles */
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0; /* Start invisible */
+                transform: translateY(20px); /* Slide in from below */
+            }
+            to {
+                opacity: 1; /* Fully visible */
+                transform: translateY(0); /* Original position */
+            }
+        }
+
+        h2 {
+            color: #35424a; /* Darker color for headings */
+        }
+
+        .bio {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Prajwal Singh's Blog</h1>
+    <p class="bio">Software Developer Apprentice at Fidelity Investments | Graduate of Dayananda Sagar University, Bangalore</p>
+</header>
+
+<div class="container">
+    <main>
+        <article>
+            <h2>My Journey as a Software Developer</h2>
+            <p>As a software developer apprentice, I have learned various programming languages and frameworks that have shaped my career. My journey began at Dayananda Sagar University, where I developed a passion for coding.</p>
+        </article>
+
+        <article>
+            <h2>Latest Trends in Software Development</h2>
+            <p>The software development industry is constantly evolving. Keeping up with the latest trends is crucial for any developer. In this post, I will discuss some of the most significant trends shaping the future of software development.</p>
+        </article>
+
+        <article>
+            <h2>Tips for Aspiring Developers</h2>
+            <p>If you're just starting your journey in software development, here are some tips that can help you succeed. From choosing the right programming language to building a strong portfolio, these insights can guide you on your path.</p>
+        </article>
+    </main>
+
+    <aside>
+        <h3>About Me</h3>
+        <p>I am passionate about technology and coding. My goal is to become a proficient software developer and contribute to innovative projects.</p>
+
+        <h3>Skills</h3>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+
+        <h3>Connect with Me</h3>
+        <p>Email: prajwal.singh@example.com</p>
+    </aside>
+
+    <footer>
+        &copy; 2024 Prajwal Singh. All Rights Reserved.
+    </footer>
+</div>
+
+</body>
+</html>

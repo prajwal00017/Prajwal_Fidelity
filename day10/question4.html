@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer's Feedback Rating Chart</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        h1 {
+            color: #ff00ff;
+            font-size: 36px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
+        table {
+            width: 50%;
+            margin-left: 25%;
+            border-collapse: collapse;
+            text-align: left;
+            background-color: #f0f0f0;
+        }
+        table, th, td {
+            border: 2px solid #8b0000; /* Outer border color */
+        }
+        th, td {
+            border: 1px solid white; /* White border between cells */
+            padding: 10px;
+            text-align: center;
+            color: black; /* Set text color to black */
+            font-weight: bold; /* Make text bold */
+        }
+        th {
+            background-color: #8B0000;
+            color: white; /* Keep header text white */
+        }
+        .rating-5 {
+            background-color: #FF69B4;
+        }
+        .rating-4 {
+            background-color: #00CED1;
+        }
+        .rating-3 {
+            background-color: #FF69B4;
+        }
+        .rating-2 {
+            background-color: #00CED1;
+        }
+        .rating-1 {
+            background-color: #FF69B4;
+        }
+        .feedback-excellent {
+            background-color: lime;
+        }
+        .feedback-verygood {
+            background-color: lightgreen;
+        }
+        .feedback-good {
+            background-color: yellow;
+        }
+        .feedback-average {
+            background-color: lightgray;
+        }
+        .feedback-belowaverage {
+            background-color: red;
+            color: white; /* Keep feedback below average text white */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trainer's Feedback Rating Chart</h1>
+    <h2>Trainer's Name: Elite Parker</h2>
+
+    <table>
+        <tr>
+            <th>S.No.</th>
+            <th>Training Module Name</th>
+            <th>Overall Rating</th>
+            <th>Feedback</th>
+        </tr>
+        <tr class="rating-5">
+            <td>1</td>
+            <td>HTML5, CSS3, JavaScript</td>
+            <td>5</td>
+            <td class="feedback-excellent">Excellent</td>
+        </tr>
+        <tr class="rating-4">
+            <td>2</td>
+            <td>Basic Java Programming</td>
+            <td>4</td>
+            <td class="feedback-verygood">Very Good</td>
+        </tr>
+        <tr class="rating-3">
+            <td>3</td>
+            <td>Advanced Java Programming</td>
+            <td>3</td>
+            <td class="feedback-good">Good</td>
+        </tr>
+        <tr class="rating-2">
+            <td>4</td>
+            <td>UNIX Shell Scripting</td>
+            <td>2</td>
+            <td class="feedback-average">Average</td>
+        </tr>
+        <tr class="rating-1">
+            <td>5</td>
+            <td>Python Programming</td>
+            <td>1</td>
+            <td class="feedback-belowaverage">Below Average</td>
+        </tr>
+    </table>
+</body>
+</html>
