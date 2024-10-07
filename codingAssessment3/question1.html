@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Maintenance Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00B2C6;
+            color: black; /* Set default text color to black */
+        }
+        h1 {
+            text-align: center;
+            background-color: #B22222;
+            color: white; /* Headline remains white */
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            padding: 0 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            color: black; /* Ensure input text is black */
+        }
+        .gender-group {
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .gender-group input {
+            margin-right: 10px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .message {
+            background-color: #F2F2F2;
+            padding: 15px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            font-weight: bold;
+            color: black; /* Message content is black */
+        }
+        button {
+            background-color: #006400;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #228B22;
+        }
+        .clear-btn {
+            background-color: #B22222;
+        }
+        .clear-btn:hover {
+            background-color: #FF0000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>AC Maintenance Service</h1>
+
+    <div class="form-group">
+        <label for="name">Customer Name</label>
+        <input type="text" id="name" value="John Abraham">
+    </div>
+
+    <div class="form-group gender-group">
+        <label>Gender</label>
+        <input type="radio" id="male" name="gender" value="Male" checked> Male
+        <input type="radio" id="female" name="gender" value="Female"> Female
+    </div>
+
+    <div class="form-group">
+        <label for="mobile">Mobile Number</label>
+        <input type="text" id="mobile" value="9898989898">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email ID</label>
+        <input type="email" id="email" value="sample@demo.com">
+    </div>
+
+    <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" value="12 Oak Street, Amsterdam, NY 12010">
+    </div>
+
+    <div class="form-group">
+        <label for="acType">AC Type</label>
+        <select id="acType">
+            <option value="centralized" selected>Centralized</option>
+            <option value="window">Window</option>
+            <option value="split">Split</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="serviceType">Service Type</label>
+        <select id="serviceType">
+            <option value="gasRefill" selected>Gas Refill</option>
+            <option value="fullService">Full Service</option>
+            <option value="maintenance">Maintenance</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="date">Date of Appointment</label>
+        <input type="date" id="date" value="2022-10-28">
+    </div>
+
+    <div class="form-group">
+        <label for="yearlyMaintenance">Yearly Maintenance</label>
+        <input type="checkbox" id="yearlyMaintenance" checked> Select if required
+    </div>
+
+    <div class="form-group">
+        <label for="duration">Duration in months from the previous service</label>
+        <input type="text" id="duration">
+    </div>
+
+    <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset" class="clear-btn">Clear</button>
+    </div>
+
+    <div class="message">
+        Hello John Abraham, your service appointment for Centralized AC Gas Refill with yearly maintenance will be sent to your email ID sample@demo.com and the estimated service charge will be Rs 2500.
+    </div>
+
+</body>
+</html>
